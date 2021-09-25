@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		523A09CD26F8B74100FFDA93 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A09CC26F8B74100FFDA93 /* main.swift */; };
+		523A09D526F8B76900FFDA93 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = 523A09D426F8B76900FFDA93 /* BigInt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523A09D526F8B76900FFDA93 /* BigInt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = montgomeryLadder;
+			packageProductDependencies = (
+				523A09D426F8B76900FFDA93 /* BigInt */,
+			);
 			productName = montgomeryLadder;
 			productReference = 523A09C926F8B74100FFDA93 /* montgomeryLadder */;
 			productType = "com.apple.product-type.tool";
@@ -89,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					523A09C826F8B74000FFDA93 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -105,6 +110,9 @@
 				Base,
 			);
 			mainGroup = 523A09C026F8B74000FFDA93;
+			packageReferences = (
+				523A09D326F8B76900FFDA93 /* XCRemoteSwiftPackageReference "BigInt" */,
+			);
 			productRefGroup = 523A09CA26F8B74100FFDA93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,6 +252,7 @@
 		523A09D126F8B74100FFDA93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW23A3H2PR;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -255,6 +264,7 @@
 		523A09D226F8B74100FFDA93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW23A3H2PR;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -285,6 +295,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		523A09D326F8B76900FFDA93 /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		523A09D426F8B76900FFDA93 /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 523A09D326F8B76900FFDA93 /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 523A09C126F8B74000FFDA93 /* Project object */;
 }
